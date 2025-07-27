@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class fibonaci
+{
+void fibo()
+{
+Scanner s=new Scanner(System.in);
+System.out.print("enter n=");
+int n=s.nextInt();
+int f1,f2,f3;
+f1=0;
+f2=1;
+System.out.print("Fibonacci series="+f1+"  "+f2);
+for(int i=1;i<=n;i++)
+{
+f3=f1+f2;
+System.out.print(" "+f3);
+f1=f2;
+f2=f3;
+}
+}
+public static void main(String arg[])
+{
+fibonaci f=new fibonaci();
+f.fibo();
+
+}
+}
+
